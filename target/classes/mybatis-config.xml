@@ -40,5 +40,7 @@
     </environments>
     <mappers>
         <mapper resource="mappers/MyMapper.xml" />
+        <mapper resource="mappers/UserDaoMapper.xml"/>
+        <mapper resource="mappers/UserMapper.xml"/>
     </mappers>
 </configuration>

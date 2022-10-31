@@ -1,6 +1,7 @@
-package com.zpc.mybatis;
+package com.zpc.mybatis.Mybatis;
 
 
+import com.zpc.mybatis.pojo.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -23,7 +24,7 @@ public class MybatisTest {
         try {
             // 操作CRUD，第一个参数：指定statement，规则：命名空间+“.”+statementId
             // 第二个参数：指定传入sql的参数：这里是用户id
-            User user = sqlSession.selectOne("MyMapper.selectUser", 1);
+            User user = sqlSession.selectOne("MyMapper.selectUser", 3);
             System.out.println(user);
         } finally {
             sqlSession.close();
